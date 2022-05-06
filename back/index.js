@@ -11,8 +11,9 @@ const app = express();
 const users = [{ id: 1, username: 'BeWoler', name: 'Misha' }];
 const createUser = (input) => {
   const id = Date.now();
-  return { id, ...input }
-}
+  return { id, ...input };
+};
+
 const root = {
   getAllUsers: () => {
     return users;
